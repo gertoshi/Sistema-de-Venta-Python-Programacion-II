@@ -1,0 +1,22 @@
+{
+    "abigail": {
+        "cargo": "Administrador",
+        "usuario": "abigail",
+        "contrasena": "29031993Aby*"
+    },
+    "a": {
+        "cargo": "Administrador",
+        "usuario": "a",
+        "contrasena": "123"
+    },
+    "r": {
+        "cargo": "Administrador",
+        "usuario": "r",
+        "contrasena": "123456"
+    },
+    "f": {
+        "cargo": "Empleado",
+        "usuario": "f",
+        "contrasena": "123456"
+    }
+}
