@@ -6,6 +6,15 @@ from tkinter import messagebox
 contador_ventas = 1
 productos_mostrados = False
 
+def empleado():
+    usuario_informacion = tk.Tk()
+    usuario_informacion.title("Sistema Ventas")
+    usuario_informacion.geometry("1080x800")
+    moduloVenta(usuario_informacion)
+
+    usuario_informacion.mainloop()
+
+
 def moduloVenta(usuario_informacion):
     for widget in usuario_informacion.winfo_children():
             widget.destroy()
