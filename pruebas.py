@@ -1,15 +1,13 @@
 import customtkinter as ctk
 from time import strftime
-import locale
 from moduloVentas import moduloVenta
-from gestion_cortaa import gestion_corta
-from registro import modulo_usuario
+from moduloGestion import gestion_corta
+from moduloRegistro import modulo_usuario
 import subprocess
 
 
 
 def prueba():
-    locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
     def actualizar_reloj():
         etiqueta_hora.configure(text=strftime("%H:%M"))
@@ -43,7 +41,12 @@ def prueba():
 
     ventana = ctk.CTk()
     ventana.title("Sistema Ventas")
-    ventana.geometry("1080x800")
+    ancho_ventana = ventana.winfo_screenwidth()
+    alto_ventana = ventana.winfo_screenheight()
+    x_ventana = ventana.winfo_screenwidth() // 2 - ancho_ventana // 2
+    y_ventana = ventana.winfo_screenheight() // 2 - alto_ventana // 2
+    posicion = str(ancho_ventana) + "x" + str(alto_ventana) + "+" + str(x_ventana) + "+" + str(y_ventana)
+    ventana.geometry(posicion)
 
     def volver_login ():
         subprocess.Popen(["python","login1.py"])
@@ -85,3 +88,4 @@ def prueba():
     actualizar_reloj()
 
     ventana.mainloop()
+
