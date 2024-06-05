@@ -6,6 +6,7 @@ from tkinter import messagebox
 contador_ventas = 1
 productos_mostrados = False
 
+"--------------------------Funciones del modulo ventas-------------------------"
 def moduloVenta(usuario_informacion):
     for widget in usuario_informacion.winfo_children():
             widget.destroy()
