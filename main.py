@@ -49,7 +49,7 @@ def prueba():
     ventana.geometry(posicion)
 
     def volver_login ():
-        subprocess.Popen(["python","login1.py"])
+        subprocess.Popen(["python","moduloLogin.py"])
         ventana.destroy()
 
     usuario_informacion = ctk.CTkFrame(ventana, width=1700, height=1400)
