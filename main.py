@@ -1,6 +1,6 @@
 import tkinter as tk
 from gestion_cortaa import *
-from moduloVentas import moduloVenta
+from modulo_ventas import moduloVenta
 import sys
 from registro import modulo_usuario
 

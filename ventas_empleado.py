@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
-from moduloVentas import moduloVenta
+from modulo_ventas import moduloVenta
 def empleado():
     usuario_informacion = tk.Tk()
     usuario_informacion.title("Sistema Ventas")

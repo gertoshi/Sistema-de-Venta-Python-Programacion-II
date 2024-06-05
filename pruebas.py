@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from time import strftime
 import locale
-from moduloVentas import moduloVenta
+from modulo_ventas import moduloVenta
 from gestion_cortaa import gestion_corta
 from registro import modulo_usuario
 import subprocess

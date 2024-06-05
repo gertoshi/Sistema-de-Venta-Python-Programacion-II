@@ -262,3 +262,6 @@ def moduloVenta(usuario_informacion):
     entryCantidad = tk.Entry(usuario_informacion)
     entryCantidad.place(x=130,y=290)
 
+
+print("Hola mundo")
+
