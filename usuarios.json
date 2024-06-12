@@ -1,22 +1,65 @@
 {
-    "abigail": {
+    "123": {
+        "nombre": "a",
+        "apellido": "123",
+        "dni": "123",
         "cargo": "Administrador",
-        "usuario": "abigail",
-        "contrasena": "29031993Aby*"
+        "usuario": "123",
+        "contrasena": "123456",
+        "alta": " 11/06/24"
     },
-    "a": {
-        "cargo": "Administrador",
-        "usuario": "a",
-        "contrasena": "123"
-    },
-    "r": {
-        "cargo": "Administrador",
-        "usuario": "r",
-        "contrasena": "123456"
-    },
-    "f": {
+    "90furious": {
+        "nombre": "e",
+        "apellido": "e",
+        "dni": "08888888",
         "cargo": "Empleado",
-        "usuario": "f",
-        "contrasena": "123456"
+        "usuario": "90furious",
+        "contrasena": "ee0000",
+        "alta": " 11/06/24"
+    },
+    "qwe": {
+        "nombre": "asdasd",
+        "apellido": "asdasd",
+        "dni": "12312322",
+        "cargo": "Administrador",
+        "usuario": "qwe",
+        "contrasena": "12312313",
+        "alta": " 11/06/24"
+    },
+    "qwea": {
+        "nombre": "asd",
+        "apellido": "asd",
+        "dni": "21332113",
+        "cargo": "Administrador",
+        "usuario": "qwea",
+        "contrasena": "123123",
+        "alta": " 11/06/24"
+    },
+    "asdw": {
+        "nombre": "sadas",
+        "apellido": "sda",
+        "dni": "12312312",
+        "cargo": "Administrador",
+        "usuario": "asdw",
+        "contrasena": "qdawsdasd",
+        "alta": "Administrador"
+    },
+    "asdwa": {
+        "nombre": "sadsa",
+        "apellido": "sda",
+        "dni": "12312312",
+        "cargo": "Administrador",
+        "usuario": "asdwa",
+        "contrasena": "qdawsdasd",
+        "alta": " 11/06/24"
+    },
+    "12": {
+        "nombre": "adda",
+        "apellido": "adda",
+        "dni": "12121212",
+        "cargo": "Administrador",
+        "usuario": "12",
+        "contrasena": "12121212",
+        "alta": " 11/06/24"
     }
 }

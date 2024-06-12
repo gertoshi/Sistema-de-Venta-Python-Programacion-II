@@ -118,8 +118,8 @@ def gestion_corta(usuario_informacion):
         else:
             messagebox.showerror("Error", "Por favor, seleccione un producto primero.")
 
-    def salir_gestion_producto():
-        usuario_informacion.destroy()
+
+    
     style = ttk.Style()
     style.configure("Treeview", font=("Arial", 14))  # Cambiar el tamaño de la fuente
     style.configure("Treeview.Heading", font=("Arial", 16, "bold"))  
@@ -139,5 +139,5 @@ def gestion_corta(usuario_informacion):
     tk.Button(usuario_informacion, text="Ingresar Producto", command=dar_alta_producto).grid(row=3, column=0, padx=5, pady=55)
     tk.Button(usuario_informacion, text="Modificar Producto", command=modificar_producto).grid(row=3, column=1, padx=5, pady=55)
     tk.Button(usuario_informacion, text="Eliminar Producto", command=eliminar_producto).grid(row=3, column=2, padx=5, pady=55)
-    tk.Button(usuario_informacion, text="Salir", command=salir_gestion_producto).grid(row=3, column=3, padx=5, pady=55)
+    tk.Button(usuario_informacion, text="Salir").grid(row=3, column=3, padx=5, pady=55)
 

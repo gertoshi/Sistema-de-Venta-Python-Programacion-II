@@ -1,0 +1,20 @@
+[
+    {
+        "Descripcion": "ASD",
+        "Codigo": 1,
+        "Precio": 21.0,
+        "Cantidad": 21
+    },
+    {
+        "Descripcion": "QWE",
+        "Codigo": 2,
+        "Precio": 123.0,
+        "Cantidad": 123
+    },
+    {
+        "Descripcion": "QW",
+        "Codigo": 3,
+        "Precio": 21.0,
+        "Cantidad": 8
+    }
+]

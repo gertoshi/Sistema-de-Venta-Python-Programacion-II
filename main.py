@@ -12,8 +12,9 @@ def prueba():
     def actualizar_reloj():
         etiqueta_hora.configure(text=strftime("%H:%M"))
         etiqueta_s.configure(text=strftime("%S"))
-        etiqueta_fecha.configure(text=strftime("%A, %d/%m/%y"))
+        etiqueta_fecha.configure(text=strftime(" %d/%m/%y"))
         etiqueta_s.after(1000, actualizar_reloj)
+
 
     def usuario():
         for widget in usuario_informacion.winfo_children():
@@ -23,7 +24,6 @@ def prueba():
     def productos():
         for widget in usuario_informacion.winfo_children():
             widget.destroy()
-        # Mostrar la información de gestión corta
         gestion_corta(usuario_informacion)
 
     def salir():
@@ -32,7 +32,7 @@ def prueba():
 
     def ventas():
         for widget in usuario_informacion.winfo_children():
-            widget.grid_configure(padx=10, pady=5)
+            widget.destroy()
         moduloVenta(usuario_informacion)
 
     # Inicializar la ventana principal
@@ -54,9 +54,7 @@ def prueba():
 
     usuario_informacion = ctk.CTkFrame(ventana, width=1700, height=1400)
     usuario_informacion.grid(row=0, column=0, padx=20, pady=100)
-
-    for widget in usuario_informacion.winfo_children():
-        widget.grid_configure(padx=10, pady=5)
+    usuario_informacion.pack_propagate(False) 
 
     boton_productos = ctk.CTkButton(master=ventana, text="Productos", border_width= 3,border_color="blue",font=("Bookman", 14), hover_color="blue", fg_color="black", command=productos, height=60, width=190)
     boton_productos.place(x=30, y=30)
@@ -73,6 +71,7 @@ def prueba():
     boton_salir = ctk.CTkButton(master=ventana, text="Salir", border_width= 3,border_color="blue",font=("Bookman", 14), hover_color="blue", fg_color="black", command=salir, height=60, width=190)
     boton_salir.place(x=750, y=30)
 
+
     frame_hora = ctk.CTkFrame(ventana)
     frame_hora.place(x=1300, y=30)
 
@@ -88,3 +87,5 @@ def prueba():
     actualizar_reloj()
 
     ventana.mainloop()
+
+prueba()

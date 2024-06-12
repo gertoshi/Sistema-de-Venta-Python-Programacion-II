@@ -11,13 +11,11 @@ def empleado():
     usuario_informacion.title("Sistema Ventas")
     usuario_informacion.geometry("1080x800")
     moduloVenta(usuario_informacion)
-
+    
     usuario_informacion.mainloop()
 
 
 def moduloVenta(usuario_informacion):
-    for widget in usuario_informacion.winfo_children():
-            widget.destroy()
     def buscar_producto():
         entrada = entryBuscador.get().strip() 
         if entrada.isdigit(): 
@@ -68,7 +66,7 @@ def moduloVenta(usuario_informacion):
         if not cantidad_seleccionada:
             messagebox.showerror("Error", "Por favor, ingresa la cantidad a comprar.")
             return  
-        cantidad_seleccionada = float(cantidad_seleccionada)  
+        cantidad_seleccionada = int(cantidad_seleccionada)  
 
         indice_seleccionado = listaProductos.curselection()
         if indice_seleccionado:
@@ -93,7 +91,7 @@ def moduloVenta(usuario_informacion):
             producto_texto = carritoProductos.get(i)
             codigo, descripcion_cantidad = producto_texto.split(" - ", 1)
             descripcion, cantidad_texto = descripcion_cantidad.split(" cantidad a comprar: ")
-            cantidad_comprada = float(cantidad_texto)
+            cantidad_comprada = int(cantidad_texto)
             with open("productos.json", "r") as file:
                 productos = json.load(file)
                 for producto in productos:
@@ -105,7 +103,7 @@ def moduloVenta(usuario_informacion):
 
     def actualizar_stock(id_producto, cantidad):
         codigo, stock_texto = id_producto.split(" - ", 2)
-        stock = float(stock_texto.split()[-1])
+        stock = int(stock_texto.split()[-1])
         if cantidad <= stock:
             nuevo_stock = stock - cantidad
             with open("productos.json", "r+") as file:
@@ -161,7 +159,7 @@ def moduloVenta(usuario_informacion):
             codigo, descripcion_cantidad = elemento.split(" - ", 1)
             descripcion, cantidad_texto = descripcion_cantidad.split(" cantidad a comprar: ")
             descripcion = descripcion.strip("- ")  
-            cantidad_comprada = float(cantidad_texto)
+            cantidad_comprada = int(cantidad_texto)
             with open("productos.json", "r+") as file:
                 productos = json.load(file)
                 for producto in productos:
@@ -201,7 +199,7 @@ def moduloVenta(usuario_informacion):
             producto_texto = carritoProductos.get(i)
             codigo, descripcion_cantidad = producto_texto.split(" - ", 1)
             descripcion, cantidad_texto = descripcion_cantidad.split(" cantidad a comprar: ")
-            cantidad_comprada = float(cantidad_texto)
+            cantidad_comprada = int(cantidad_texto)
             with open("productos.json", "r") as file:
                 productos = json.load(file)
                 for producto in productos:

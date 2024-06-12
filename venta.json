@@ -1,0 +1,54 @@
+{
+    "ventas": [
+        {
+            "id_venta": 0,
+            "elementos_carrito": [
+                {
+                    "Codigo": 1,
+                    "Descripcion": "EUGE stock disponible 2999999999998.0",
+                    "Cantidad": 1.0,
+                    "Precio_Unitario": 3000000000000.0,
+                    "Precio_Total": 3000000000000.0,
+                    "Stock_Actualizado": 2999999999997.0
+                },
+                {
+                    "Codigo": 1,
+                    "Descripcion": "EUGE stock disponible 2999999999999.0",
+                    "Cantidad": 2.0,
+                    "Precio_Unitario": 3000000000000.0,
+                    "Precio_Total": 6000000000000.0,
+                    "Stock_Actualizado": 2999999999996.0
+                }
+            ],
+            "venta_total": 9000000000000.0
+        },
+        {
+            "id_venta": 1,
+            "elementos_carrito": [
+                {
+                    "Codigo": 1,
+                    "Descripcion": "EUGE stock disponible 2",
+                    "Cantidad": 2,
+                    "Precio_Unitario": 3000000000000.0,
+                    "Precio_Total": 6000000000000.0,
+                    "Stock_Actualizado": 2999999999996.0
+                }
+            ],
+            "venta_total": 6000000000000.0
+        },
+        {
+            "id_venta": 2,
+            "elementos_carrito": [
+                {
+                    "Codigo": 2,
+                    "Descripcion": "QWE stock disponible 123",
+                    "Cantidad": 12,
+                    "Precio_Unitario": 123.0,
+                    "Precio_Total": 1476.0,
+                    "Stock_Actualizado": 99.0
+                }
+            ],
+            "venta_total": 1476.0
+        }
+    ]
+}
